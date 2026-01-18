@@ -1,5 +1,6 @@
 # Proiect_ESP
-Proiectul constă în proiectarea și construcția unui robot mobil (rover) capabil să fie controlat de la distanță mare prin intermediul unui protocol radio personalizat, utilizând module ESP32 și antene externe.
+Proiectul vizează proiectarea și construcția unui robot mobil (rover) bazat pe platforma Arduino Uno, controlat de la distanță prin module radio nRF24L01 cu antene externe.Obiectivul principal este realizarea unei comunicații robuste printr-un Custom Radio Protocol,
+capabil să asigure integritatea datelor într-un mediu cu interferențe 
 
 
 # BOM (Bill Of Materials) 
@@ -17,7 +18,7 @@ Proiectul constă în proiectarea și construcția unui robot mobil (rover) capa
 | Acumulatori Li-ion 18650 (3.7V) | 2 | Sursa de alimentare principală pentru motoare și electronica robotului. |
 | Modul Joystick sau Potențiometre | 1 | Interfața de control pentru utilizator (montată pe telecomandă). |
 | Breadboard & Fire Jumper | 1 set | Pentru realizarea conexiunilor electrice fără lipire (în faza de prototip). |
-| Regulator de tensiune (opțional) | 1 | Pentru a asigura un curent stabil de 5V către plăcile ESP32. |
+| Regulator de tensiune (opțional) | 1 | Pentru a asigura un curent stabil de 5V . |
 
 
 # Intrebari:
