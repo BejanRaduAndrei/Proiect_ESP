@@ -21,20 +21,20 @@ Proiectul constă în proiectarea și construcția unui robot mobil (rover) capa
 
 
 # Intrebari:
-Q1 - What is the system boundary?
+Q1 - What is the system boundary? <br>
 Granița sistemului este definită de interfața dintre componentele hardware controlate și mediul extern. Aceasta include Transmitter-ul (telecomanda cu Arduino Uno, joystick și modulul radio) și Receiver-ul (șasiul robotului).
 Fluxul de date intră prin User Input (joystick), este transmis prin Radio Frequency (RF) Link, și se transformă în Physical Output prin DC Motors.
 Tot ce ține de reflexia semnalului ultrasonic pe obiecte sau interferențele electromagnetice externe se află în afara graniței sistemului.
 <br>
-Q2 - Where does intelligence live? Inteligența este distribuită, dar nucleul decizional se află în Firmware-ul încărcat pe Arduino-ul de pe robot.
+Q2 - Where does intelligence live? Inteligența este distribuită, dar nucleul decizional se află în Firmware-ul încărcat pe Arduino-ul de pe robot. <br>
 Acesta execută o buclă de tip Control Loop în care procesează în timp real două surse de date: comenzile primite prin Radio Payload și datele de proximitate de la Ultrasonic Sensor.
 „Inteligența” propriu-zisă constă în logica de Collision Avoidance, care poate suprascrie (override) comanda utilizatorului pentru a preveni un impact.
 <br>
-Q3 - What is the hardest technical problem? 
+Q3 - What is the hardest technical problem?  <br>
 Cea mai mare provocare este gestionarea Signal Integrity și a Latency-ului în comunicația wireless. 
 <br>
-Q4 - What is the minimum demo?
-Apasarea unui buton de pe telecomandă va rezulta intr-o miscare a masinii , rezunltand faptul ca exista comunicare intre arduino-uri
+Q4 - What is the minimum demo? <br>
+Apasarea unui buton de pe telecomandă va rezulta intr-o miscare a masinii , rezunltand faptul ca exista comunicare intre arduino-uri 
 <br>
-Q5-Why is this not just a tutorial?
+Q5-Why is this not just a tutorial? <br>
 Proiectul depășește nivelul unui tutorial deoarece implică un proces intens de Hardware Troubleshooting și Diagnosticare, forțat de utilizarea unor componente cu un grad ridicat de uzură.
